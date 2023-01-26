@@ -11,7 +11,7 @@ public class Magazine implements Printable{
     public static void magazineName(Printable[] printables) {
         for (Printable print:printables) {
             if(print instanceof Magazine)
-                System.out.println(Arrays.toString(printables));
+                System.out.println(print);
         }
 
     }
@@ -32,8 +32,6 @@ public class Magazine implements Printable{
 
     @Override
     public String toString() {
-        return "Magazine{" +
-                "magazinesName='" + magazinesName + '\'' +" page: "+page+
-                '}';
+        return magazinesName;
     }
 }

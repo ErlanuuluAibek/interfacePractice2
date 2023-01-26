@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class Book implements Printable {
-    private String bookName;
+    private  String bookName;
     private int page;
 
     public Book(String bookName, int page) {
@@ -12,7 +12,7 @@ public class Book implements Printable {
     public static void printBooks(Printable[] printables) {
         for (Printable print:printables) {
             if(print.getClass().getName().equals("Book")){
-                System.out.println(Arrays.toString(printables));
+                System.out.println(print);
             }
         }
     }
@@ -33,8 +33,6 @@ public class Book implements Printable {
 
     @Override
     public String toString() {
-        return "Book{" +
-                "bookName='" + bookName + '\'' +" page: "+page+
-                '}';
+        return bookName;
     }
 }
