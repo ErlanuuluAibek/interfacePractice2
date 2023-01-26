@@ -6,7 +6,7 @@ public class Main {
         Book.printBooks(new Printable[]{book,book2});
         Magazine magazine1=new Magazine("klass",20);
         Magazine magazine2=new Magazine("lebed",25);
-        Magazine.magazineName(new Printable[]{magazine1,magazine2});
+        Magazine.magazineName(new Printable[]{magazine1,magazine2,book});
         Printable[]printables={book,book2,magazine1,magazine2};
         for (Printable print:printables) {
             print.print();

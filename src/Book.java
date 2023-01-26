@@ -10,7 +10,11 @@ public class Book implements Printable {
     }
 
     public static void printBooks(Printable[] printables) {
-        System.out.println(Arrays.toString(printables));
+        for (Printable print:printables) {
+            if(print.getClass().getName().equals("Book")){
+                System.out.println(Arrays.toString(printables));
+            }
+        }
     }
 
 

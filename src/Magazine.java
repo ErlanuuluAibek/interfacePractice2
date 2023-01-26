@@ -9,7 +9,11 @@ public class Magazine implements Printable{
         this.page=page;
     }
     public static void magazineName(Printable[] printables) {
-        System.out.println(Arrays.toString(printables));
+        for (Printable print:printables) {
+            if(print instanceof Magazine)
+                System.out.println(Arrays.toString(printables));
+        }
+
     }
 
     public String getMagazinesName() {
